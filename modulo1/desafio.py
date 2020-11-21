@@ -45,7 +45,7 @@ def funcao_4(lista_numerica):
 numeros = [10,20,30,40,10]
 '''
 
-
+'''
 print('Código 5:')
 class Classe1:
     def funcao_da_classe_1(self, string):
@@ -57,7 +57,7 @@ class Classe1:
             else:
                 valor += dicionario[string[i]]
         return valor
-    
+'''    
     
 
 
