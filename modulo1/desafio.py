@@ -59,8 +59,8 @@ class Classe_1:
                 valor += dicionario[string[i]]
         return valor
 
-teste = Classe_1.funcao_da_classe_1()
-print(teste())
+teste = Classe_1().funcao_da_classe_1(1)
+print(teste)
 '''
 
 
