@@ -1,5 +1,3 @@
-import numpy as np #pip install numpy==1.19.3
-import matplotlib.pyplot as plt #pip install matplotlib
 import pandas as pd #pip install pandas
 
 #help(pd) #Atenção no decimal, pois por padrão o separador é str='.'
