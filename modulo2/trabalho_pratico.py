@@ -43,3 +43,9 @@ Y = X[0,:]
 Y[1] = 10
 print(f'X: \n{X}')
 '''
+
+'''
+#Código 7
+X = np.array([[1, 3], [11, 10]])
+print(np.mean(X[X > np.pi]))
+'''
