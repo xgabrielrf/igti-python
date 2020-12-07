@@ -67,3 +67,9 @@ df = pd.DataFrame(data=data, index=labels)
 
 print(df)
 '''
+
+'''
+#Código 10
+y_true = np.array([1., 2., 1.])
+y_pred = np.array([1.1, 1.98, 1.05])
+'''
