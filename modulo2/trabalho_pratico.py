@@ -34,3 +34,12 @@ X = np.ones((2,2))
 X = X * 2
 print(f'X: \n{X}')
 '''
+
+'''
+#Código 6
+X = np.array([[1, 2], [3, 4]])
+print(f'X: \n{X}')
+Y = X[0,:]
+Y[1] = 10
+print(f'X: \n{X}')
+'''
