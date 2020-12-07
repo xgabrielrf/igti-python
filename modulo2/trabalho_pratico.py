@@ -30,8 +30,7 @@ print(f'Z: {Z}')
 
 '''
 #Código 5
-X = np.ones((2,2))
-X = X * 2
+X = np.ones((2, 2)) + np.ones((2, 2))
 print(f'X: \n{X}')
 '''
 
