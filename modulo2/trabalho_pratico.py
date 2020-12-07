@@ -20,3 +20,10 @@ Z = np.zeros((4,))
 Z[1:] = 1.
 print(f'Z: {Z}')
 '''
+
+'''
+#Código 4
+Z = np.zeros((4,))
+Z[:-1] = 1.
+print(f'Z: {Z}')
+'''
