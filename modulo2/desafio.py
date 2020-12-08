@@ -4,9 +4,11 @@ import pandas as pd
 df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 
 # a. Qual o tamanho desse dataset?
-print(df.shape)
+#print(df.shape)
 
 # b. Qual a média da coluna windspeed?
+print(np.mean(df['windspeed']))
+
 # c. Qual a média da coluna temp?
 # d. Quantos registros existem para o ano de 2011?
 # e. Quantos registros existem para o ano de 2012?
