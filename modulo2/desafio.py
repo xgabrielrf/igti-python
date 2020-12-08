@@ -29,16 +29,34 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 #print(np.sum(df.loc[df['datetime'] > '31/12/2011', ['total_count']]))
 
 # h. Qual estação do ano contém a maior média de locações de bicicletas?
-#print('1: inverno, 2: primavera, 3: verão, 4: outono')
-#print(df['season'].value_counts())
-#print('3 - Verão')
+#maior_valor = 0
+#for season in range(1,5):
+#    total = np.sum(df.loc[df["season"] == season, ["total_count"]])
+#    total_split = str(total).split()
+#    print(f'Na estacao {season}, {total_split[1]}')
+#    if int(maior_valor) < int(total_split[1]):
+#        maior_valor = total_split[1]
+#        estacao = season
+#print('\n1: inverno, 2: primavera, 3: verão, 4: outono')
+#print(f'\nE o maior valor foi {maior_valor} na estacao {estacao}')
+##RESPOSTA: E o maior valor foi 1061129 na estacao 3 - VERÃO
 
 # i. Qual estação do ano contém a menor média de locações de bicicletas?
-print('1: inverno, 2: primavera, 3: verão, 4: outono')
-print(df['season'].value_counts())
-print('4 - Outono')
+#menor_valor = 999999999999
+#for season in range(1,5):
+#    total = np.sum(df.loc[df["season"] == season, ["total_count"]])
+#    total_split = str(total).split()
+#    print(f'Na estacao {season}, {total_split[1]}')
+#    if int(menor_valor) > int(total_split[1]):
+#        menor_valor = total_split[1]
+#        estacao = season
+#print('\n1: inverno, 2: primavera, 3: verão, 4: outono')
+#print(f'\nE o menor valor foi {menor_valor} na estacao {estacao}')
+##RESPOSTA: E o menor valor foi 471348 na estacao 1 - INVERNO
 
 # j. Qual horário do dia contém a maior média de locações de bicicletas?
+#print(df['hour'].value_counts())
+
 # k. Qual horário do dia contém a menor média de locações de bicicletas?
 # l. Que dia da semana contém a maior média de locações de bicicletas?
 # m. Que dia da semana contém a menor média de locações de bicicletas?
