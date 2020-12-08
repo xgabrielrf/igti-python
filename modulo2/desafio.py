@@ -13,10 +13,13 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 #print(np.mean(df['temp']))
 
 # d. Quantos registros existem para o ano de 2011? 
-df['datetime'] = pd.to_datetime(df['datetime'])
-print(df.loc[df['datetime'] <= '31/12/2011',['datetime']])
+#df['datetime'] = pd.to_datetime(df['datetime'])
+#print(df.loc[df['datetime'] <= '31/12/2011', ['datetime']])
 
 # e. Quantos registros existem para o ano de 2012?
+df['datetime'] = pd.to_datetime(df['datetime'])
+print(df.loc[df['datetime'] > '31/12/2011', ['datetime']])
+
 # f. Quantas locações de bicicletas foram efetuadas em 2011?
 # g. Quantas locações de bicicletas foram efetuadas em 2012?
 # h. Qual estação do ano contém a maior média de locações de bicicletas?
