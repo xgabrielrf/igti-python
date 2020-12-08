@@ -34,6 +34,10 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 #print('3 - Verão')
 
 # i. Qual estação do ano contém a menor média de locações de bicicletas?
+print('1: inverno, 2: primavera, 3: verão, 4: outono')
+print(df['season'].value_counts())
+print('4 - Outono')
+
 # j. Qual horário do dia contém a maior média de locações de bicicletas?
 # k. Qual horário do dia contém a menor média de locações de bicicletas?
 # l. Que dia da semana contém a maior média de locações de bicicletas?
