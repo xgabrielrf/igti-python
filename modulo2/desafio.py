@@ -55,18 +55,29 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 ##RESPOSTA: E o menor valor foi 471348 na estacao 1 - INVERNO
 
 # j. Qual horário do dia contém a maior média de locações de bicicletas?
-maior_valor = 0
+#maior_valor = 0
+#for hour in range(0,24):
+#    total = np.sum(df.loc[df["hour"] == hour, ["total_count"]])
+#    total_split = str(total).split()
+#    print(f'Na hora {hour}, {total_split[1]}')
+#    if int(maior_valor) < int(total_split[1]):
+#        maior_valor = total_split[1]
+#        hora = hour
+#print(f'\nE o maior valor foi {maior_valor} na hora {hora}')
+##RESPOSTA: E o maior valor foi 336860 na hora 17
+
+# k. Qual horário do dia contém a menor média de locações de bicicletas?
+menor_valor = 99999999
 for hour in range(0,24):
     total = np.sum(df.loc[df["hour"] == hour, ["total_count"]])
     total_split = str(total).split()
     print(f'Na hora {hour}, {total_split[1]}')
-    if int(maior_valor) < int(total_split[1]):
-        maior_valor = total_split[1]
+    if int(menor_valor) > int(total_split[1]):
+        menor_valor = total_split[1]
         hora = hour
-print(f'\nE o maior valor foi {maior_valor} na hora {hora}')
-#RESPOSTA: E o maior valor foi 336860 na hora 17
+print(f'\nE o menor valor foi {menor_valor} na hora {hora}')
+#RESPOSTA: E o menor valor foi 4428 na hora 4
 
-# k. Qual horário do dia contém a menor média de locações de bicicletas?
 # l. Que dia da semana contém a maior média de locações de bicicletas?
 # m. Que dia da semana contém a menor média de locações de bicicletas?
 # n. Às quartas-feiras (weekday = 3), qual o horário do dia contém a maior média de locações de bicicletas?
