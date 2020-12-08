@@ -55,7 +55,16 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 ##RESPOSTA: E o menor valor foi 471348 na estacao 1 - INVERNO
 
 # j. Qual horário do dia contém a maior média de locações de bicicletas?
-#print(df['hour'].value_counts())
+maior_valor = 0
+for hour in range(0,24):
+    total = np.sum(df.loc[df["hour"] == hour, ["total_count"]])
+    total_split = str(total).split()
+    print(f'Na hora {hour}, {total_split[1]}')
+    if int(maior_valor) < int(total_split[1]):
+        maior_valor = total_split[1]
+        hora = hour
+print(f'\nE o maior valor foi {maior_valor} na hora {hora}')
+#RESPOSTA: E o maior valor foi 336860 na hora 17
 
 # k. Qual horário do dia contém a menor média de locações de bicicletas?
 # l. Que dia da semana contém a maior média de locações de bicicletas?
