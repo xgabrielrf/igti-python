@@ -99,24 +99,47 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 ##RESPOSTA: E o maior valor foi 487790 em sexta-feira
 
 # m. Que dia da semana contém a menor média de locações de bicicletas?
-menor_valor = 999999
-for weekday in range(0,7):
-    total = np.sum(df.loc[df["weekday"] == weekday, ["total_count"]])
-    total_split = str(total).split()
-    print(f'Na semana {weekday}, {total_split[1]}')
-    if int(menor_valor) > int(total_split[1]):
-        menor_valor = total_split[1]
-        semana = weekday
-dia_semana = {
-    0: 'domingo',
-    1: 'segunda-feira',
-    2: 'terça-feira',
-    3: 'quarta-feira',
-    4: 'quinta-feira',
-    5: 'sexta-feira',
-    6: 'sábado'}
-print(f'\nE o menor valor foi {menor_valor} em {dia_semana[semana]}')
-#RESPOSTA: E o menor valor foi 444027 em domingo
+#menor_valor = 999999
+#for weekday in range(0,7):
+#    total = np.sum(df.loc[df["weekday"] == weekday, ["total_count"]])
+#    total_split = str(total).split()
+#    print(f'Na semana {weekday}, {total_split[1]}')
+#    if int(menor_valor) > int(total_split[1]):
+#        menor_valor = total_split[1]
+#        semana = weekday
+#dia_semana = {
+#    0: 'domingo',
+#    1: 'segunda-feira',
+#    2: 'terça-feira',
+#    3: 'quarta-feira',
+#    4: 'quinta-feira',
+#    5: 'sexta-feira',
+#    6: 'sábado'}
+#print(f'\nE o menor valor foi {menor_valor} em {dia_semana[semana]}')
+##RESPOSTA: E o menor valor foi 444027 em domingo
 
 # n. Às quartas-feiras (weekday = 3), qual o horário do dia contém a maior média de locações de bicicletas?
+#df_week_3 = df.loc[df["weekday"] == 3]
+#maior_valor = 0
+#for hour in range(0,24):
+#    total = np.sum(df_week_3.loc[df_week_3["hour"] == hour, ["total_count"]])
+#    total_split = str(total).split()
+#    print(f'Na hora {hour}, {total_split[1]}')
+#    if int(maior_valor) < int(total_split[1]):
+#        maior_valor = total_split[1]
+#        hora = hour
+#print(f'\nE o maior valor foi {maior_valor} na hora {hora}')
+##RESPOSTA: E o maior valor foi 53367 na hora 17
+
 # o. Aos sábados (weekday = 6), qual o horário do dia contém a maior média de locações de bicicletas?
+#df_week_6 = df.loc[df["weekday"] == 6]
+#maior_valor = 0
+#for hour in range(0,24):
+#    total = np.sum(df_week_6.loc[df_week_6["hour"] == hour, ["total_count"]])
+#    total_split = str(total).split()
+#    print(f'Na hora {hour}, {total_split[1]}')
+#    if int(maior_valor) < int(total_split[1]):
+#        maior_valor = total_split[1]
+#        hora = hour
+#print(f'\nE o maior valor foi {maior_valor} na hora {hora}')
+##RESPOSTA: E o maior valor foi 40464 na hora 13
