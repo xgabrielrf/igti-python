@@ -78,6 +78,7 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 #print(f'\nE o menor valor foi {menor_valor} na hora {hora}')
 ##RESPOSTA: E o menor valor foi 4428 na hora 4
 
+'''VERIFICAR'''
 # l. Que dia da semana contém a maior média de locações de bicicletas?
 #maior_valor = 0
 #for weekday in range(0,7):
@@ -96,6 +97,7 @@ df = pd.read_csv("https://pycourse.s3.amazonaws.com/bike-sharing.csv")
 #    5: 'sexta-feira',
 #    6: 'sábado'}
 #print(f'\nE o maior valor foi {maior_valor} em {dia_semana[semana]}')
+'''VERIFICAR'''
 ##RESPOSTA: E o maior valor foi 487790 em sexta-feira
 
 # m. Que dia da semana contém a menor média de locações de bicicletas?
