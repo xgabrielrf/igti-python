@@ -20,3 +20,18 @@ python -m pip install Django
 Starting new project(igtiflixweb):
 django-admin startproject igtiflixweb
 
+## cd .\igtiflixweb\ ##
+
+Starting the server:
+python .\manage.py runserver
+
+Starting new app:
+python .\manage.py startapp principal
+
+Change urls.py (...\igtiflixweb\igtiflixweb\urls.py):
+add path to principal and import it from django.urls
+    path('principal/',view=include('principal.urls'))
+
+
+Creating principal\urls.py
+
