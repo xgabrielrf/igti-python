@@ -1,0 +1,22 @@
+Enable virtual environment:
+python -m pip install --user virtualenv
+
+Creating new virtual enviroment:
+py -m venv showsenv
+
+        Enable scripts:
+        Set-ExecutionPolicy RemoteSigned
+
+        Rollback:
+        Set-ExecutionPolicy Restricted
+
+Starting the venv:
+.\showsenv\Scripts\activate
+
+
+Installing Django:
+python -m pip install Django
+
+Starting new project(igtiflixweb):
+django-admin startproject igtiflixweb
+
