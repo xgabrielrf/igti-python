@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Settings
-igtiflixweb/settings.py
+settings.py
