@@ -1,0 +1,20 @@
+Enable virtual environment:
+python -m pip install --user virtualenv
+
+Creating new virtual enviroment:
+py -m venv env
+
+        Enable scripts:
+        Set-ExecutionPolicy RemoteSigned
+
+        Rollback:
+        Set-ExecutionPolicy Restricted
+
+Starting the venv:
+.\env\Scripts\activate
+
+Stop the venv:
+deactivate
+
+Setup:
+pip install pandas
