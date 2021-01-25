@@ -47,6 +47,13 @@ def create_episode_in_show(name):
     else:
         return {'message': 'Série não encontrada!'}, 404
 
+@app.route('/show/<int:id>', methods=['DELETE'])
+def delete_id(id):
+    show_deleted = show.ShowModel.find_by_id(id)
+    show_deleted.delete_from_db()
+    return {'message': 'Excluído com sucesso!'}, 202
+
+
 if __name__ == '__main__':
     from data import alchemy
     alchemy.init_app(app)
