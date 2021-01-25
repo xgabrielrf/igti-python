@@ -1,4 +1,4 @@
-from ..data import alchemy
+from data import alchemy
 
 class EpisodeModel(alchemy.Model):
     __tablename__ = 'episode'
@@ -19,7 +19,7 @@ class EpisodeModel(alchemy.Model):
     
     @classmethod
     def find_by_name(cls,name):
-        cls.query.filter_by(name=name).first()
+        return cls.query.filter_by(name=name).first()
 
     def save_to_db(self):
         alchemy.session.add(self)
